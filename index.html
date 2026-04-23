@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Message for My Baby</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h1 {
+      color: #d63384;
+    }
+
+    .message-box {
+      background-color: #fff0f5;
+      padding: 20px;
+      border: 2px solid #d63384;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(214, 51, 132, 0.3);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+
+    #loveNote {
+      margin-top: 20px;
+      color: #c2185b;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <h1>Yalooo Baby!💖</h1>
+    <p>Click the button, I have something sweet for you!</p>
+    <button onclick="showLove()">Show Message</button>
+    <div id="loveNote"></div>
+  </div>
+
+  <script>
+    function showLove() {
+      const note = `
+        To the most beautiful girl in the world 💕<br><br>
+        My world changed in the most amazing way the moment I learned of your existence. You are the epitome of hope, love, and limitless potential.
+.<br>
+       <br>Your small fingers, your inquisitive eyes, and the soft cadence of your breathing amaze me every day. I think that love is a language that cannot be explained, and my heart communicates with yours through every lullaby, tender touch, and hushed "I love you." <br>
+
+<br> The first time you burst out laughing. I picture the experiences we'll have together, the tales we'll tell, and the things we'll discover. Know that through every victory and obstacle, I will be there to mentor, encourage, and support you.
+
+ <br>
+
+        Thank you for being you. ❤️
+      `;
+      document.getElementById("loveNote").innerHTML = note;
+    }
+  </script>
+</body>
+</html>
